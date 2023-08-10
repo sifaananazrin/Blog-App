@@ -2,7 +2,9 @@ import express from 'express'
 import mongoose from 'mongoose';
 import userRouter from "./routes/user-route"
 import blogRouter from "./routes/blog.route"
+import cors from "cors"
 const app=express();
+app.use(cors())
 app.use(express.json()); //which type of data we are sending 
 
 
